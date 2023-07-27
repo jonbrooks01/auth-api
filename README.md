@@ -5,12 +5,12 @@ Access Control
 
 Author: Jonathan Brooks
 
-[Pull Request](https://github.com/jonbrooks01/api-server/pull/8)
+[Pull Request](https://github.com/jonbrooks01/auth-api/pull/1)
 
-[deployed server](https://deployment-practice-main.onrender.com)
+<!-- [deployed server](https://deployment-practice-main.onrender.com) -->
 
 Setup
-.env requirements:PORT - 3000
+.env requirements:PORT - 3001
 
 Running the app: npm start
 
