@@ -27,4 +27,4 @@ Unit Tests: npm run test
 
 UML:
 
-![UML](./UML.jpg)
+![UML](./UML.png)
