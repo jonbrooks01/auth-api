@@ -7,7 +7,7 @@ Author: Jonathan Brooks
 
 [Pull Request](https://github.com/jonbrooks01/auth-api/pull/1)
 
-<!-- [deployed server](https://deployment-practice-main.onrender.com) -->
+[deployed server](https://basic-server-4efy.onrender.com)
 
 Setup
 .env requirements:PORT - 3001
