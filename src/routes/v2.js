@@ -14,7 +14,7 @@ function checkAuthorization(capability) {
 router.param('model', (req, res, next) => {
   const modelName = req.params.model;
   if (dataModules[modelName]) {
-    req.model = dataModule[modelName];
+    req.model = dataModules[modelName];
     next();
   } else {
     next('Invalid Model');
@@ -23,9 +23,9 @@ router.param('model', (req, res, next) => {
 
 router.get('/:model', handleGetAll);
 router.get('/:model/:id', handleGetOne);
-router.post('/:model2', checkAuthorization('create'), handleCreate);
-router.put('/:model2/:id', checkAuthorization('update'), handleUpdate);
-router.delete('/:model2/:id', checkAuthorization('delete'), handleDelete);
+router.post('/:model', checkAuthorization('create'), handleCreate);
+router.put('/:model/:id', checkAuthorization('update'), handleUpdate);
+router.delete('/:model/:id', checkAuthorization('delete'), handleDelete);
 
 async function handleGetAll(req, res) {
   let allRecords = await req.model.get();
